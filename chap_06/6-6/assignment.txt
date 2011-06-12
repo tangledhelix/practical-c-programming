@@ -1,0 +1,6 @@
+Exercise 6-6
+
+Write a program that, given the number of hours an employee
+worked and the hourly wage, computes the employee's weekly pay.
+Count any hours over 40 as time and a half.
+

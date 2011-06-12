@@ -1,0 +1,14 @@
+Datemath
+Preliminary specification
+10 Jan 2011
+Dan Lowe
+
+Datemath is a program that calculates the number of days between two
+dates. It understands leap years and accounts for them.
+
+Example:
+
+    Enter a starting date (month day year): 1 15 1991
+    Enter an ending date (month day year): 2 28 1991
+    1/15/1991 - 2/28/1991 = 45 days (inclusive)
+

@@ -1,0 +1,6 @@
+Exercise 7-1
+
+Write a program to convert English units to metric (i.e., miles to
+kilometers, gallons to liters, etc.). Include a specification and
+a code design.
+

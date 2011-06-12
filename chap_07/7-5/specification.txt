@@ -1,0 +1,20 @@
+Prime
+
+Specification
+
+13 Jan 2011
+Dan Lowe
+
+Prime will mathematically determine if a given integer is a prime number.
+
+Example:
+
+    Enter number: 45
+    Not prime (3 * 15)
+
+    Enter number: 48
+    Not prime (2 * 24)
+
+    Enter number: 37
+    37 is a prime number.
+

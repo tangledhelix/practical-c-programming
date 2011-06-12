@@ -1,0 +1,20 @@
+Salestax
+
+Specification
+
+Dan Lowe
+13 Jan 2011
+
+Salestax is a program that will add an 8% sales tax to a given amount,
+then round the result to the nearest penny.
+
+If '0' is entered, the program ends.
+
+Example:
+
+    Enter amount or '0' to quit: 4.35
+    After tax, amount is $4.70
+
+    Enter amount or '0' to quit: 94.38
+    After tax, amount is $101.93
+

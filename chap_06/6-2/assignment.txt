@@ -1,0 +1,14 @@
+Exercise 6-2
+
+A professor generates letter grades using this table.
+
+% right      grade
+-----------  -----
+ 0 - 60       F
+ 61 - 70      D
+ 71 - 80      C
+ 81 - 90      B
+ 91 - 100     A
+
+Given a numeric grade, print the letter.
+

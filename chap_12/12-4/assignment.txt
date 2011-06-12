@@ -1,0 +1,5 @@
+Exercise 12-4
+
+Write a program that lists all the planes that leave from two airports
+specified by the user.
+

@@ -1,0 +1,25 @@
+PosNeg
+
+Specification
+
+14 Jan 2011
+Dan Lowe
+
+PosNeg takes a set of numbers in and counts how many are positive and how many
+are negative. If '0' is entered, the program ends and the counters are
+displayed.
+
+Example:
+
+	Enter '0' to end the program.
+
+	Enter a value: 4
+	Enter a value: 9
+	Enter a value: -3
+	Enter a value: 46
+	Enter a value: 39
+	Enter a value: -9
+	Enter a value: 0
+
+	Counted 4 positive, 2 negative values.
+

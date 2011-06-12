@@ -1,0 +1,25 @@
+
+Loop
+	Collect input from user
+	If input field 1 is 'q' or 'Q'
+		End Program
+	End If
+	If input is not 2 fields
+		Print error (not enough fields)
+		Jump to start of loop
+	End If
+	Get unit from input field 1
+	Get measurement from input field 2
+	If unit is 'm'
+		Multiply unit * 1.6093
+	Else If unit is 'g'
+		Multiply unit * 3.7854
+	Else If unit is 'i'
+		Multiply unit * 2.54
+	Else If unit is 'f'
+		Multiply unit * 0.3048
+	Else
+		Print error (unknown unit)
+	End If
+	Display result
+End Loop

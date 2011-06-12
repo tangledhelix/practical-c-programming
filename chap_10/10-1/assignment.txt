@@ -1,0 +1,5 @@
+Exercise 10-1
+
+Write a macro that returns TRUE if its parameter is divisible by 10
+and FALSE otherwise.
+

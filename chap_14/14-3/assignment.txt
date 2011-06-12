@@ -1,0 +1,6 @@
+Exercise 14-3
+
+Write a program that reads a file containing a list of numbers, and then writes
+two files, one with all numbers divisible by three and another containing all
+the other numbers.
+

@@ -1,0 +1,5 @@
+Exercise 6-4
+
+Given an amount of money (less than $1.00), compute the number of
+quarters, dimes, nickels and pennies needed.
+

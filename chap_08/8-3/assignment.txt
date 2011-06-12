@@ -1,0 +1,4 @@
+Exercise 8-3
+
+Write a program to average n numbers.
+

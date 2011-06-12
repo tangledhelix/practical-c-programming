@@ -1,0 +1,5 @@
+Exercise 12-1
+
+Design a structure to hold the data for a mailing list. Write a
+function to print out the data.
+

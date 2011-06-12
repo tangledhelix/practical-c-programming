@@ -1,0 +1,7 @@
+Exercise 5-4
+
+Write a program that converts kilometers per hour to miles per
+hour.
+
+miles = ( kilometer * 0.6213712 )
+

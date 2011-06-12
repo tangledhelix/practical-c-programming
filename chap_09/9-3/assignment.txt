@@ -1,0 +1,6 @@
+Exercise 9-3
+
+Write a function count( number, array, length ) that counts
+the number of times number appears in array. The array has
+length elements. The function should be recursive. Write
+a test program to go with the function.

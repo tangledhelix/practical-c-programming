@@ -1,0 +1,7 @@
+
+Loop
+  Read an operator and number
+  Do the calculation
+  Display the result
+End-Loop
+

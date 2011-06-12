@@ -1,0 +1,44 @@
+Convert: an Imperial to Metric Unit Converter
+Preliminary Specification
+Jan 7, 2011
+Dan Lowe
+
+Convert is a program that converts Imperial measurements to Metric.
+
+Available conversions:
+
+* miles to kilometers
+* gallons to liters
+* inches to centimeters
+* feet to meters
+
+Enter a type and a value, e.g. "f 3.5" for 3.5 feet. A calculation is
+made and returned in the equivalent metric measurement.
+
+Enter "q" to quit.
+
+Example session:
+
+    % ./convert
+    
+    (m:miles g:gallons i:inches f:feet q:quit)
+    Enter the unit type and value: f 3.5
+    3.5 feet = 1.0668 meters
+    
+    (m:miles g:gallons i:inches f:feet q:quit)
+    Enter the unit type and value: i 14
+    14 inches = 35.56 centimeters
+    
+    (m:miles g:gallons i:inches f:feet q:quit)
+    Enter the unit type and value: q
+    
+    Goodbye.
+    %
+
+Conversion formulas:
+
+    1 mile = 1.6093 kilometers
+    1 gallon = 3.7854 liters
+    1 inch = 2.54 centimeters
+    1 foot = 0.3048 meters
+

@@ -1,0 +1,42 @@
+Calc: a Four-Function Calculator
+Preliminary Specification
+Dec 10, 1989
+Steve Oualline
+
+Warning: this document is a preliminary specification. Any resemblance
+to any software living or dead is purely coincidental.
+
+Calc is a program that allows the user to turn a $2,000 computer into a
+$1.98 four-function calculator. The program will add, subtract, multiply,
+and divide simple integers.
+
+Dividing by 0 results in an error message and the result register
+is left unchanged.
+
+When the program is run, it will zero the result register and display
+the register's contents. The user can then type in an operator and number.
+The result will be updated and displayed. The following operators are
+valid:
+
+Operator      Meaning
+
++             Addition
+-             Subtraction
+*             Multiplication
+/             Division
+q             Quit program
+
+For example:
+
+    calc
+    Result: 0
+    Enter operator and number: + 123
+    Result: 123
+    Enter operator and number: - 23
+    Result: 100
+    Enter operator and number: / 25
+    Result: 4
+    Enter operator and number: * 4
+    Result: 16
+    0
+

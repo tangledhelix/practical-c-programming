@@ -1,0 +1,4 @@
+Exercise 7-5
+
+Write a program to tell if a number is prime.
+

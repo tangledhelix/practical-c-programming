@@ -1,0 +1,12 @@
+Get file size in bytes from user
+
+Divide file size by 960 to get number of seconds
+Divide file size by (60*60*24) to get number of whole days
+Modulo file size by (60*60*24) to get remainder
+Divide remainder by (60*60) to get number of whole hours
+Modulo remainder by (60*60) to get number of remainder minutes
+Divide remainder by 60 to get number of whole minutes
+Modulo remainder by 60 to get number of remainder seconds
+
+Display days, hours, minutes, seconds.
+

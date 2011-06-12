@@ -1,0 +1,4 @@
+Exercise 9-5
+
+Write a function that returns the maximum value of an array of numbers.
+

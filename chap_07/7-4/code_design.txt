@@ -1,0 +1,5 @@
+
+Get amount from user
+If amount is 0, end program
+Calculate tax (amount * 0.08)
+Display as %02f to round to nearest penny

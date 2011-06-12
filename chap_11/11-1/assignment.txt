@@ -1,0 +1,6 @@
+Exercise 11-1
+
+Write a set of parameterized macros, clear_bit and test_bit,
+to go with the set_bit operation from graph/graph.c. Write
+a main program to test these macros.
+

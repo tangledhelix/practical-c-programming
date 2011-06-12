@@ -1,0 +1,5 @@
+Exercise 14-6
+
+Design a file format to store a person's name, address, and other information.
+Write a program to read this file and produce a set of mailing labels.
+

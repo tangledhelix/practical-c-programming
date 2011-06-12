@@ -1,0 +1,81 @@
+get starting date from user
+get ending date from user
+
+define leap year function
+
+define delta calculator function
+
+if end_year - start_year > 1        # 1994 - 1992 = 2, 1993 in middle
+	(we know there are intervening whole years)
+	for each intervening year
+		add 365 to total
+		if year is a leap year
+			add 1 to total
+		end if
+	end for
+	calculate start year delta, add to total
+	calculate end year delta, add to total
+else if end_year - start_year == 1    # 1994 - 1993 = 1
+	(we know they are adjacent years)
+	calculate start year delta, add to total
+	calculate end year delta, add to total
+else if end_year == start_year
+	calculate diff in dates, it is the total
+else
+	shouldn't ever get here.
+end if
+
+display total
+
+end program
+
+------------------------------------------------
+leap year function (arg: year)
+
+	/* Any year divisible by 4 is a leap year... */
+	if ( year % 4 == 0 ) {
+		leap_year = 1;
+
+		/* Unless the year is divisible by 100, but not 400 */
+		if ( year % 100 == 0 ) {
+			if ( year % 400 != 0 ) {
+				leap_year = 0;
+			}
+		}
+	}
+
+------------------------------------------------
+delta calculator function (args: start-month, start-day, end-month, end-day)
+
+define month day-count map (dec=31, nov=30, etc)
+
+if end_month - start_month > 1    # 12 - 10 = 2
+	(we know there are whole months in the middle)
+	for each month in the middle, add its value (from the map)
+	if one of the months is february
+		if this is a leap year
+			if it includes the end of february (day 29)
+				add 1 to delta
+			end if
+		end if
+	end if
+	# end_month=12, end_day=15: add 15 to total
+	add end_day to total (total for end_month)
+	# end_month=3, end_day=17: 31-17=14, add 14 to total
+	calculate days[start_month] - start_day, add to total # +1?
+else if end_month - start_month = 1   # 12 - 11 = 1
+	(we know they're adjacent)
+	# end_month=3, end_day=17: 31-17=14, add 14 to total
+	calculate days[start_month] - start_day, add to total # +1?
+	# end_month=12, end_day=15: add 15 to total
+	add end_day to total (total for end_month)
+else if end_month == start_month
+	(we know it's the same month)
+	calculate diff between days
+	if month is feb, account for leap year if it includes day 29
+else
+	should never reach this point.
+end if
+return delta
+
+------------------------------------------------

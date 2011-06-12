@@ -1,0 +1,11 @@
+Exercise 12-3
+
+Design an airline reservation data structure that contains the following
+data:
+
+* Flight number
+* Originating airport code (3 characters)
+* Destination airport code (3 characters)
+* Starting time
+* Arrival time
+

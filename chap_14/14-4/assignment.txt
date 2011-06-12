@@ -1,0 +1,6 @@
+Exercise 14-4
+
+Write a program that reads an ASCII file containing a list of numbers and
+writes a binary file containing the same list. Write a program that goes the
+other way so that you can check your work.
+

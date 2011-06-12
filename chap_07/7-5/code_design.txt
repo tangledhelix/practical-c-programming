@@ -1,0 +1,14 @@
+A prime number is any number divisible only by 1 and itself.
+
+get number from user
+for each number (n) between 2 and (number - 1)
+	calculate number mod n
+	if the result is zero
+		(clean divisor)
+		print "not a prime number"
+		end program
+	end if
+end for
+
+if we reached here, it is prime, so print that result.
+

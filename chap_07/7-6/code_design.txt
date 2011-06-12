@@ -1,0 +1,13 @@
+Loop
+	Get a value from the user
+	If the value is 0
+		Display counters
+		End program
+	End If
+	If the value is greater than 0
+		Increment positive counter
+	Else If the value is less than 0
+		Increment negative counter
+	End If
+End Loop
+

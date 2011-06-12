@@ -1,0 +1,5 @@
+Exercise 7-6
+
+Write a program that takes a series of numbers and counts the number of
+positive and negative values.
+

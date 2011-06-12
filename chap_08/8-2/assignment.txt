@@ -1,0 +1,24 @@
+Exercise 8-2
+
+The total resistance of n resistors in parallel is:
+
+1/R = 1/R1 + 1/R2 + 1/R3 + ... + 1/Rn
+
+Suppose we have a network of two resistors with the values 400 ohms and 200
+ohms. Then our equation would be:
+
+1/R = 1/R1 + 1/R2
+
+Substituting in the value of our resistors we get:
+
+1/R = 1/400 + 1/200
+
+1/R = 3/400
+
+R = 400/3
+
+So the total resistance of our two-resistor network is 133.3 ohms.
+
+Write a program to compute the total resistance for any number of parallel
+resistors.
+

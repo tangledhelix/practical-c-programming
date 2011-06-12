@@ -1,0 +1,7 @@
+Exercise 10-3
+
+Write a second macro is_hex that returns true if its argument is a
+hex digit (0-9, A-F, a-f). The second macro should reference the first.
+
+(First is exercise 10-2.)
+

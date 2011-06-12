@@ -1,0 +1,5 @@
+Exercise 9-6
+
+Write a function that scans a character array for the character - and
+replaces it with _.
+

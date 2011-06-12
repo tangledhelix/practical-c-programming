@@ -1,0 +1,7 @@
+Exercise 5-3
+
+Write a program that prints the perimeter of a rectangle given its
+height and width.
+
+perimeter = 2 * ( width + height )
+

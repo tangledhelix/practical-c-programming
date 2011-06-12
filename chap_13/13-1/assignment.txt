@@ -1,0 +1,5 @@
+Exercise 13-1
+
+Write a program that uses pointers to set each element of an array
+to zero.
+

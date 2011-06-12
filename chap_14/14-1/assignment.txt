@@ -1,0 +1,4 @@
+Exercise 14-1
+
+Write a program that reads a file and then counts the number of lines in it.
+

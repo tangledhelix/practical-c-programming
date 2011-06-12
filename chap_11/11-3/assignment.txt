@@ -1,0 +1,7 @@
+Exercise 11-3
+
+Change graph/graph.c so that it draws a white line across
+a black background.
+
+WTF does that even mean? Screw this exercise.
+

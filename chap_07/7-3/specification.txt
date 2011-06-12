@@ -1,0 +1,11 @@
+Transmit_Rate
+
+A program to calculate serial line transmission rates.
+
+12 Jan 2011
+Dan Lowe
+
+Transmit_Rate will assume a serial link can transmit 960 cps (characters per
+second). Given a file size in bytes, it will calculate the length of time to
+complete the file's transmission over a serial line.
+

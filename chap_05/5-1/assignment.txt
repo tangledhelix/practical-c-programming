@@ -1,0 +1,5 @@
+Exercise 5-1
+
+Write a program that converts Centigrade to Fahrenheit.
+F = (9/5)C + 32
+

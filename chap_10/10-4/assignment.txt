@@ -1,0 +1,6 @@
+Exercise 10-4
+
+Write a preprocessor macro that swaps two integers. (For the real
+hacker, write one that does not use a temporary variable declared
+outside the macro.)
+

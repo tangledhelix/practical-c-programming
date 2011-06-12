@@ -1,0 +1,5 @@
+Exercise 11-2
+
+Write a program to draw a 10-by-10 bitmapped square. You can
+borrow the code from graph/graph.c to print the results.
+

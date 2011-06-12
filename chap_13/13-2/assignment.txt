@@ -1,0 +1,5 @@
+Exercise 13-2
+
+Write a function that takes a single string as its argument and
+returns a pointer to the first nonwhite character in the string.
+

@@ -1,0 +1,6 @@
+Exercise 11-6
+
+Write a program that will take the bits in a number and shift them
+to the left end. For example, 01010110 (binary) would become
+11110000 (binary).
+
