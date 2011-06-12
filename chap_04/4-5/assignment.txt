@@ -1,0 +1,8 @@
+Write a program that deliberately makes the following mistakes:
+
+- Prints a floating-point number using the %d conversion.
+
+- Prints an integer using the %f conversion.
+
+- Prints a character using the %d conversion.
+
