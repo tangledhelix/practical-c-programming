@@ -22,17 +22,17 @@ FILE *save_file = NULL;
  *      otherwise line (just like fgets).
  **********************************************************************/
 
-char *extended_fgets( char *line, int size, FILE *file ) {
+char *extended_fgets(char *line, int size, FILE *file) {
 
 	char *result;           /* result of fgets */
 
-	result = fgets( line, size, file );
+	result = fgets(line, size, file);
 
 	/* did somsone ask for a save file?? */
-	if ( save_file != NULL ) {
-		fputs( line, save_file ); /* save line in file */
+	if (save_file != NULL) {
+		fputs(line, save_file); /* save line in file */
 	}
 
-	return( result );
+	return(result);
 }
 

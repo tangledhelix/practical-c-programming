@@ -8,22 +8,22 @@
 #include <stdio.h>
 #include <math.h>
 
-char line[ 100 ];           /* a line of keyboard input */
+char line[100];             /* a line of keyboard input */
 float distance;             /* distance between two points */
 float square;               /* the square of the distance */
 float square_root;          /* the square root of square */
 
 int main() {
-	printf( "Enter the distance: " );
-	fgets( line, sizeof( line ), stdin );
-	sscanf( line, "%f", &distance );
+	printf("Enter the distance: ");
+	fgets(line, sizeof(line), stdin);
+	sscanf(line, "%f", &distance);
 
 	square = distance * distance;
-	printf( "Square of distance is %f\n", square );
+	printf("Square of distance is %f\n", square);
 
-	square_root = sqrtf( square );
-	printf( "Square root of previous result is %f\n", square_root );
+	square_root = sqrtf(square);
+	printf("Square root of previous result is %f\n", square_root);
 
-	return( 0 );
+	return(0);
 }
 

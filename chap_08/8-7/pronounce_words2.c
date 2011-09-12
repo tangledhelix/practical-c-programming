@@ -26,141 +26,141 @@ int last_digit;             /* a place to stash the last digit */
 
 int main() {
 
-	for ( number = 0; number <= 100; ++number ) {
+	for (number = 0; number <= 100; ++number) {
 
 		/* numbers below 20 are all custom */
-		if ( number < 20 ) {
-			switch ( number ) {
+		if (number < 20) {
+			switch (number) {
 				case 0:
-					printf( "zero" );
+					printf("zero");
 					break;
 				case 1:
-					printf( "one" );
+					printf("one");
 					break;
 				case 2:
-					printf( "two" );
+					printf("two");
 					break;
 				case 3:
-					printf( "three" );
+					printf("three");
 					break;
 				case 4:
-					printf( "four" );
+					printf("four");
 					break;
 				case 5:
-					printf( "five" );
+					printf("five");
 					break;
 				case 6:
-					printf( "six" );
+					printf("six");
 					break;
 				case 7:
-					printf( "seven" );
+					printf("seven");
 					break;
 				case 8:
-					printf( "eight" );
+					printf("eight");
 					break;
 				case 9:
-					printf( "nine" );
+					printf("nine");
 					break;
 				case 10:
-					printf( "ten" );
+					printf("ten");
 					break;
 				case 11:
-					printf( "eleven" );
+					printf("eleven");
 					break;
 				case 12:
-					printf( "twelve" );
+					printf("twelve");
 					break;
 				case 13:
-					printf( "thirteen" );
+					printf("thirteen");
 					break;
 				case 14:
-					printf( "fourteen" );
+					printf("fourteen");
 					break;
 				case 15:
-					printf( "fifteen" );
+					printf("fifteen");
 					break;
 				case 16:
-					printf( "sixteen" );
+					printf("sixteen");
 					break;
 				case 17:
-					printf( "seventeen" );
+					printf("seventeen");
 					break;
 				case 18:
-					printf( "eighteen" );
+					printf("eighteen");
 					break;
 				case 19:
-					printf( "nineteen" );
+					printf("nineteen");
 					break;
 			}
 
-		} else if ( number == 100 ) {
-			printf( "one hundred!" );
+		} else if (number == 100) {
+			printf("one hundred!");
 
 		} else {
 			tens_place = number / 10;       /* calculate the tens place */
 			last_digit = number % 10;       /* calculate a remainder (ones place) */
 
-			switch ( tens_place ) {
+			switch (tens_place) {
 				case 2:
-					printf( "twenty" );
+					printf("twenty");
 					break;
 				case 3:
-					printf( "thirty" );
+					printf("thirty");
 					break;
 				case 4:
-					printf( "forty" );
+					printf("forty");
 					break;
 				case 5:
-					printf( "fifty" );
+					printf("fifty");
 					break;
 				case 6:
-					printf( "sixty" );
+					printf("sixty");
 					break;
 				case 7:
-					printf( "seventy" );
+					printf("seventy");
 					break;
 				case 8:
-					printf( "eighty" );
+					printf("eighty");
 					break;
 				case 9:
-					printf( "ninety" );
+					printf("ninety");
 					break;
 			}
 
-			switch ( last_digit ) {
+			switch (last_digit) {
 				case 1:
-					printf( "-one" );
+					printf("-one");
 					break;
 				case 2:
-					printf( "-two" );
+					printf("-two");
 					break;
 				case 3:
-					printf( "-three" );
+					printf("-three");
 					break;
 				case 4:
-					printf( "-four" );
+					printf("-four");
 					break;
 				case 5:
-					printf( "-five" );
+					printf("-five");
 					break;
 				case 6:
-					printf( "-six" );
+					printf("-six");
 					break;
 				case 7:
-					printf( "-seven" );
+					printf("-seven");
 					break;
 				case 8:
-					printf( "-eight" );
+					printf("-eight");
 					break;
 				case 9:
-					printf( "-nine" );
+					printf("-nine");
 					break;
 			}
 		}
 
-		printf( "\n" );
+		printf("\n");
 	}
 
-	return( 0 );
+	return(0);
 }
 

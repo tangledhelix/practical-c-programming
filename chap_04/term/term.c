@@ -7,5 +7,5 @@ int main() {
 	term_2 = 2 * term;
 	term_3 = 3 * term;
 
-	return( 0 );
+	return(0);
 }

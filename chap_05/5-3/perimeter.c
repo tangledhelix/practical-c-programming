@@ -10,21 +10,21 @@
 float width;        /* width of the rectangle */
 float height;       /* height of the rectangle */
 float perimeter;    /* perimeter (computed) */
-char line[ 50 ];    /* a line from the keyboard */
+char line[50];      /* a line from the keyboard */
 
 int main() {
-	printf( "Rectangle's height? " );
-	fgets( line, sizeof( line ), stdin );
-	sscanf( line, "%f", &height );
+	printf("Rectangle's height? ");
+	fgets(line, sizeof(line), stdin);
+	sscanf(line, "%f", &height);
 
-	printf( "Rectangle's width? " );
-	fgets( line, sizeof( line ), stdin );
-	sscanf( line, "%f", &width );
+	printf("Rectangle's width? ");
+	fgets(line, sizeof(line), stdin);
+	sscanf(line, "%f", &width);
 
-	perimeter = 2.0 * ( height + width );
+	perimeter = 2.0 * (height + width);
 
-	printf( "Perimeter is %f\n", perimeter );
+	printf("Perimeter is %f\n", perimeter);
 
-	return( 0 );
+	return(0);
 }
 

@@ -6,9 +6,9 @@
 #include <stdio.h>
 
 long int number;        /* just int would probably be 32 bits... */
-int results[ 8 ];       /* somewhere to store the result */
+int results[8];         /* somewhere to store the result */
 
-int main( void ) {
+int main(void) {
 
 	number = 69005;     /* whatever value */
 	int i, j;           /* loop counters */
@@ -21,22 +21,22 @@ int main( void ) {
 	 * results are stored in the proper order (0 through 7)
 	 * instead of being backward
 	 */
-	for ( i = 7; i >= 0; --i ) {
+	for (i = 7; i >= 0; --i) {
 
 		/* initialize this loop-around's result container to zero */
-		results[ i ] = 0;
-		printf( "DEBUG: store into [%d]\n", i );
+		results[i] = 0;
+		printf("DEBUG: store into [%d]\n", i);
 
 		/* iterate over the 4 bits in this section */
-		for ( j = 0; j < 4; ++j ) {
+		for (j = 0; j < 4; ++j) {
 
 			/* examine this bit (position pos) */
-			printf( "DEGBUG: bit %d: ", pos );
-			if ( ( number & ( 1 << pos ) ) != 0 ) {
-				printf( "1\n" );
-				results[ i ] |= ( 1 << j );
+			printf("DEBUG: bit %d: ", pos);
+			if ((number & (1 << pos)) != 0) {
+				printf("1\n");
+				results[i] |= (1 << j);
 			} else {
-				printf( "0\n" );
+				printf("0\n");
 			}
 
 			/* move counter to next bit */
@@ -44,7 +44,7 @@ int main( void ) {
 		}
 	}
 
-	printf( "\n" );
+	printf("\n");
 
 	/* not right... if anything, 65535 bit needs to be set. */
 	/* |.||  ...|  |.||  ....  |...  ....  ....  .... */
@@ -69,16 +69,16 @@ int main( void ) {
 	 * the right positions (we don't want all the values
 	 * to be on the left side near element 0).
 	 */
-	for ( i = 0; i < 8; ++i ) {
+	for (i = 0; i < 8; ++i) {
 
-		printf( "%d", results[ i ] );
+		printf("%d", results[i]);
 
-		printf( "  " );
+		printf("  ");
 	}
 
-	printf( "\n" );
+	printf("\n");
 
-	return( 0 );
+	return(0);
 }
 
 

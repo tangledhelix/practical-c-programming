@@ -14,7 +14,7 @@
 
 int main() {
 	/* Tell the world hello */
-	printf( "Hello world\n" );
-	return( 0 );
+	printf("Hello world\n");
+	return(0);
 }
 

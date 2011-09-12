@@ -32,36 +32,36 @@
  * same address).
  **********************************************************************/
 
-char *tmp_name( void ) {
-	static char name[ 30 ];         /* The name we are generating */
+char *tmp_name(void) {
+	static char name[30];           /* The name we are generating */
 	static int sequence = 0;        /* Sequence number for the last digit */
 
 	++sequence;                     /* Move on to the next filename */
 
-	strcpy( name, "tmp" );
+	strcpy(name, "tmp");
 
 	/* Put in the sequence digit */
-	name[ 3 ] = sequence + '0';
+	name[3] = sequence + '0';
 
 	/* End the string */
-	name[ 4 ] = '\0';
+	name[4] = '\0';
 
-	return( name );
+	return(name);
 }
 
 int main() {
-	char *tmp_name( void );         /* get name of a temporary file */
+	char *tmp_name(void);           /* get name of a temporary file */
 	char *name1;                    /* name of a temporary file */
 	char *name2;                    /* name of a temporary file */
 
 	name1 = tmp_name();
 	/* print this here instead, should be correct */
-	printf( "Name1: %s\n", name1 );
+	printf("Name1: %s\n", name1);
 
 	name2 = tmp_name();
 
-	/*printf( "Name1: %s\n", name1 );*/
-	printf( "Name2: %s\n", name2 );
-	return( 0 );
+	/*printf("Name1: %s\n", name1);*/
+	printf("Name2: %s\n", name2);
+	return(0);
 }
 

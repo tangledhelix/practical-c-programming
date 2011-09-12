@@ -13,18 +13,18 @@ int minutes;        /* number of minutes (computed) */
 
 const int MINPERHOUR = 60;      /* number of minutes in 1 hour */
 
-char line[ 50 ];    /* line of input from keyboard */
+char line[50];      /* line of input from keyboard */
 
 int main() {
-	printf( "Enter minutes: " );
-	fgets( line, sizeof( line ), stdin );
-	sscanf( line, "%d", &total_minutes );
+	printf("Enter minutes: ");
+	fgets(line, sizeof(line), stdin);
+	sscanf(line, "%d", &total_minutes);
 
-	hours = ( total_minutes / MINPERHOUR );
-	minutes = ( total_minutes % MINPERHOUR );
+	hours = (total_minutes / MINPERHOUR);
+	minutes = (total_minutes % MINPERHOUR);
 
-	printf( "%d hours, %d minutes.\n", hours, minutes );
+	printf("%d hours, %d minutes.\n", hours, minutes);
 
-	return( 0 );
+	return(0);
 }
 

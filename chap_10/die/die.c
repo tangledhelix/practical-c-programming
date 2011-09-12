@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 #define DIE \
-	fprintf( stderr, "Fatal Error: Abort\n" ); exit( 8 );
+	fprintf(stderr, "Fatal Error: Abort\n"); exit(8);
 
 int main() {
 	/* a random value for testing */
@@ -19,11 +19,11 @@ int main() {
 	 * contains multiple statements. Without the braces,
 	 * only the fprintf() is conditional.
 	 */
-	if ( value < 0 ) {
+	if (value < 0) {
 		DIE;
 	}
 
-	printf( "We did not die\n" );
-	return( 0 );
+	printf("We did not die\n");
+	return(0);
 }
 

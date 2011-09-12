@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-int main( void ) {
+int main(void) {
 	short int i;            /* loop counter */
 	signed char ch;         /* loop counter of another kind */
 
@@ -15,8 +15,8 @@ int main( void ) {
 	 * to the right (01000000, 00100000, 00010000, ...) until it
 	 * reaches 0x0, at which point the loop ends.
 	 */
-	for ( i = 0x80; i != 0; i = ( i >> 1 ) ) {
-		printf( "i is %x (%d)\n", i, i );
+	for (i = 0x80; i != 0; i = (i >> 1)) {
+		printf("i is %x (%d)\n", i, i);
 	}
 
 	/* Fails */
@@ -29,10 +29,10 @@ int main( void ) {
 	 * never ends, terminating in an infinite loop with a decimal
 	 * value of -1.
 	 */
-	for ( ch = 0x80; ch != 0; ch = ( ch >> 1 ) ) {
-		printf( "ch is %x (%d)\n", ch, ch );
+	for (ch = 0x80; ch != 0; ch = (ch >> 1)) {
+		printf("ch is %x (%d)\n", ch, ch);
 	}
 
-	return( 0 );
+	return(0);
 }
 

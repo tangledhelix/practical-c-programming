@@ -7,7 +7,7 @@
 
 #define ARRAY_MAX 10
 
-int values[ ARRAY_MAX ] = {            /* an array of numbers */
+int values[ARRAY_MAX] = {              /* an array of numbers */
 	9, 3, 15, 0, 14, -23, -4, 5, -8, 4
 };
 
@@ -18,25 +18,25 @@ int *values_ptr;            /* pointer into an array */
 int main() {
 
 	/* show the current array contents */
-	for ( i = 0; i < ARRAY_MAX; ++i ) {
-		printf( "values[%d] = %d\n", i, values[ i ] );
+	for (i = 0; i < ARRAY_MAX; ++i) {
+		printf("values[%d] = %d\n", i, values[i]);
 	}
 
 	/* set a pointer to the start of array */
-	values_ptr = &values[ 0 ];
+	values_ptr = &values[0];
 
 	/* iterate over array, setting each element to 0 */
-	for ( i = 0; i < ARRAY_MAX; ++i ) {
+	for (i = 0; i < ARRAY_MAX; ++i) {
 		*values_ptr = 0;
 		++values_ptr;
 	}
 
 	/* now show the resulting array */
-	printf( "--------------------\n" );
-	for ( i = 0; i < ARRAY_MAX; ++i ) {
-		printf( "values[%d] = %d\n", i, values[ i ] );
+	printf("--------------------\n");
+	for (i = 0; i < ARRAY_MAX; ++i) {
+		printf("values[%d] = %d\n", i, values[i]);
 	}
 
-	return( 0 );
+	return(0);
 }
 

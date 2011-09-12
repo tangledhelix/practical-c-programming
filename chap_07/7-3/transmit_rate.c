@@ -12,9 +12,9 @@
 
 const int CPS = 960;            /* characters per second (transmit rate) */
 
-const int MINUTE = 60;          /* length of one minute, in seconds */
-const int HOUR = 60 * 60;       /* length of one hour, in seconds */
-const int DAY = 60 * 60 * 24;   /* length of one day, in seconds */
+const int MINUTE = 60;              /* length of one minute, in seconds */
+const int HOUR   = 60 * 60;         /* length of one hour, in seconds */
+const int DAY    = 60 * 60 * 24;    /* length of one day, in seconds */
 
 int total_seconds;              /* total seconds for the transmission */
 
@@ -29,18 +29,18 @@ int filesize;                   /* file size in bytes */
 
 int main() {
 
-	printf( "Enter file size in bytes: " );
-	fgets( line, sizeof( line ), stdin );
-	sscanf( line, "%d", &filesize );
+	printf("Enter file size in bytes: ");
+	fgets(line, sizeof(line), stdin);
+	sscanf(line, "%d", &filesize);
 
 #ifdef DEBUG
-	printf( "DEBUG:main(): filesize is %d\n", filesize );
+	printf("DEBUG:main(): filesize is %d\n", filesize);
 #endif
 
 	total_seconds = filesize / CPS;
 
 #ifdef DEBUG
-	printf( "DEBUG:main(): total_seconds is %d\n", total_seconds );
+	printf("DEBUG:main(): total_seconds is %d\n", total_seconds);
 #endif
 
 	/* calculate whole days */
@@ -49,8 +49,8 @@ int main() {
 	total_seconds = total_seconds % DAY;
 
 #ifdef DEBUG
-	printf( "DEBUG:main(): days is %d\n", days );
-	printf( "DEBUG:main(): remainder is %d\n", total_seconds );
+	printf("DEBUG:main(): days is %d\n", days);
+	printf("DEBUG:main(): remainder is %d\n", total_seconds);
 #endif
 
 	/* calculate whole hours */
@@ -59,8 +59,8 @@ int main() {
 	total_seconds = total_seconds % HOUR;
 
 #ifdef DEBUG
-	printf( "DEBUG:main(): hours is %d\n", hours );
-	printf( "DEBUG:main(): remainder is %d\n", total_seconds );
+	printf("DEBUG:main(): hours is %d\n", hours);
+	printf("DEBUG:main(): remainder is %d\n", total_seconds);
 #endif
 
 	/* calculate whole minutes */
@@ -69,13 +69,13 @@ int main() {
 	seconds = total_seconds % MINUTE;
 
 #ifdef DEBUG
-	printf( "DEBUG:main(): minutes is %d\n", minutes );
-	printf( "DEBUG:main(): seconds is %d\n", seconds );
+	printf("DEBUG:main(): minutes is %d\n", minutes);
+	printf("DEBUG:main(): seconds is %d\n", seconds);
 #endif
 
-	printf( "%d days, %d hours, %d minutes, %d seconds\n",
-			days, hours, minutes, seconds );
+	printf("%d days, %d hours, %d minutes, %d seconds\n",
+			days, hours, minutes, seconds);
 
-	return( 0 );
+	return(0);
 }
 

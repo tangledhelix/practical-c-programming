@@ -8,13 +8,13 @@ my $count = 0;
 
 open my $fh, $file or die "Can't open file";
 
-while ( <$fh> ) {
+while (<$fh>) {
     chomp;
     print;
     ++$count;
     print STDERR "DEBUG: saw line $_";
 
-    if ( $count > 500 ) {
+    if ($count > 500) {
         $xyz = 5;
     }
 

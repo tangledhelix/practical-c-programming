@@ -8,20 +8,20 @@
 
 #define SWAP(x,y) (y)=(x)+(y);(x)=(y)-(x);(y)=(y)-(x);
 
-int main( void ) {
+int main(void) {
 
 	/* tested with pos and neg numbers, and when one value is 0 */
 	int x = -3;
 	int y = 1;
 
-	printf( "x=%d y=%d\n", x, y );
+	printf("x=%d y=%d\n", x, y);
 
 	/* do swap */
 	SWAP(x,y)
 
-	printf( "x=%d y=%d\n", x, y );
+	printf("x=%d y=%d\n", x, y);
 
-	return( 0 );
+	return(0);
 }
 
 

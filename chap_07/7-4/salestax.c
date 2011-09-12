@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 
-char line[ 100 ];               /* line of input from keyboard */
+char line[100];                 /* line of input from keyboard */
 
 float amount;                   /* amount of transaction */
 float tax;                      /* amount of tax */
@@ -21,30 +21,30 @@ const float TAX_RATE = 0.08;    /* rate of taxation (8%) */
 
 int main() {
 
-	while ( 1 ) {
+	while (1) {
 
-		printf( "\nEnter an amount or '0' to quit: " );
-		fgets( line, sizeof( line ), stdin );
-		sscanf( line, "%f", &amount );
+		printf("\nEnter an amount or '0' to quit: ");
+		fgets(line, sizeof(line), stdin);
+		sscanf(line, "%f", &amount);
 
-		if ( amount == 0.0 ) {
-			printf( "Quitting.\n" );
-			return( 0 );
+		if (amount == 0.0) {
+			printf("Quitting.\n");
+			return(0);
 		}
 
 		tax = amount * TAX_RATE;
 		total = amount + tax;
 
 #ifdef DEBUG
-		printf( "DEBUG:main(): Amount is %f\n", amount );
-		printf( "DEBUG:main(): Tax is %f\n", tax );
-		printf( "DEBUG:main(): Total is %f\n", total );
+		printf("DEBUG:main(): Amount is %f\n", amount);
+		printf("DEBUG:main(): Tax is %f\n", tax);
+		printf("DEBUG:main(): Total is %f\n", total);
 #endif
 
-		printf( "Total is %0.2f\n", total );
+		printf("Total is %0.2f\n", total);
 
 	}
 
-	return( 0 );
+	return(0);
 }
 

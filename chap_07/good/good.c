@@ -26,42 +26,42 @@ int low_limit;              /* current lower limit of player's range */
 int high_limit;             /* current upper limit of player's range */
 int guess_count;            /* number of times player guessed */
 int player_number;          /* number gotten from the player */
-char line[ 80 ];            /* input buffer for a single line */
+char line[80];              /* input buffer for a single line */
 
 int main() {
-	while ( 1 ) {
+	while (1) {
 		/* Not a pure random number. See restrictions */
 		number_to_guess = rand() % 100 + 1;
 
 		/* Initialize variables for loop */
-		low_limit = 0;
-		high_limit = 100;
+		low_limit   = 0;
+		high_limit  = 100;
 		guess_count = 0;
 
-		while ( 1 ) {
+		while (1) {
 			/* tell user what the bounds are and get his guess */
-			printf( "Bounds %d - %d\n", low_limit, high_limit );
-			printf( "Value[%d]? ", guess_count );
+			printf("Bounds %d - %d\n", low_limit, high_limit);
+			printf("Value[%d]? ", guess_count);
 
 			++guess_count;
 
-			fgets( line, sizeof( line ), stdin );
-			sscanf( line, "%d", &player_number );
+			fgets(line, sizeof(line), stdin);
+			sscanf(line, "%d", &player_number);
 
 			/* did he guess right? */
-			if ( player_number == number_to_guess ) {
+			if (player_number == number_to_guess) {
 				break;
 			}
 
 			/* adjust bounds for next guess */
-			if ( player_number < number_to_guess ) {
+			if (player_number < number_to_guess) {
 				low_limit = player_number;
 			} else {
 				high_limit = player_number;
 			}
 		}
 
-		printf( "Bingo\n" );
+		printf("Bingo\n");
 
 	}
 }

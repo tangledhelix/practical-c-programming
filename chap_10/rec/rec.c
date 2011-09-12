@@ -13,9 +13,9 @@
 int main() {
 	float counter;          /* Counter for our table */
 
-	for ( counter = 0.0; counter < 10.0; counter += 1.0 ) {
-		printf( "1/%f = %f\n", counter, RECIPROCAL(counter));
+	for (counter = 0.0; counter < 10.0; counter += 1.0) {
+		printf("1/%f = %f\n", counter, RECIPROCAL(counter));
 	}
 
-	return( 0 );
+	return(0);
 }

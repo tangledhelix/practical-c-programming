@@ -18,31 +18,31 @@
 
 int main() {
 
-	char name[ STRING_LENGTH ];     /* name to look up */
+	char name[STRING_LENGTH];       /* name to look up */
 
-	int lookup( char const *const name );       /* look up a name */
+	int lookup(char const *const name);         /* look up a name */
 
-	while ( 1 ) {
-		printf( "Enter name: " );
-		fgets( name, sizeof( name ), stdin );
+	while (1) {
+		printf("Enter name: ");
+		fgets(name, sizeof(name), stdin);
 
 		/* check for a blank name */
 		/* (remember 1 character for newline) */
-		if ( strlen( name ) <= 1 ) {
+		if (strlen(name) <= 1) {
 			break;
 		}
 
 		/* get rid of newline */
-		name[ strlen( name ) - 1 ] = '\0';
+		name[strlen(name) - 1] = '\0';
 
-		if ( lookup( name ) ) {
-			printf( "%s is in the list\n", name );
+		if (lookup(name)) {
+			printf("%s is in the list\n", name);
 		} else {
-			printf( "%s is not in the list\n", name );
+			printf("%s is not in the list\n", name);
 		}
 	}
 
-	return( 0 );
+	return(0);
 }
 
 /**********************************************************************
@@ -56,7 +56,7 @@ int main() {
  *     0 -- Name not in the list.
  **********************************************************************/
 
-int lookup( char const *const name ) {
+int lookup(char const *const name) {
 
 	/* List of people in the database */
 	/* Note: last name is a NULL for end of list */
@@ -70,12 +70,12 @@ int lookup( char const *const name ) {
 
 	int index;          /* index into list */
 
-	for ( index = 0; list[ index ] != NULL; ++index ) {
-		if ( strcmp( list[ index ], name ) == 0 ) {
-			return( 1 );
+	for (index = 0; list[index] != NULL; ++index) {
+		if (strcmp(list[index], name) == 0) {
+			return(1);
 		}
 	}
 
-	return( 0 );
+	return(0);
 }
 

@@ -11,16 +11,16 @@
 
 float fahrenheit;     /* degrees fahrenheit */
 float centigrade;     /* degrees centigrade */
-char line[ 50 ];      /* a line of input */
+char line[50];        /* a line of input */
 
 int main() {
-	printf( "Enter a temperature (in C): " );
-	fgets( line, sizeof( line ), stdin );
-	sscanf( line, "%f", &centigrade );
+	printf("Enter a temperature (in C): ");
+	fgets(line, sizeof(line), stdin);
+	sscanf(line, "%f", &centigrade);
 
-	fahrenheit = ( ( 9.0 / 5.0 ) * centigrade ) + 32.0;
-	printf( "%f degrees Fahrenheit.\n", fahrenheit );
+	fahrenheit = ((9.0 / 5.0) * centigrade) + 32.0;
+	printf("%f degrees Fahrenheit.\n", fahrenheit);
 
-	return( 0 );
+	return(0);
 }
 

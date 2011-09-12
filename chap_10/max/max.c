@@ -21,9 +21,9 @@ int main() {
 	 * which would trigger a 'used before set' error that i did not
 	 * encounter.
 	 */
-	for ( counter =MAX; counter > 0; --counter )
-		printf( "Hi there\n" );
+	for (counter =MAX; counter > 0; --counter)
+		printf("Hi there\n");
 
-	return( 0 );
+	return(0);
 }
 

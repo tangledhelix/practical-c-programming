@@ -19,22 +19,22 @@
 
 #include <stdio.h>
 
-char line[ 100 ];           /* line of input from keyboard */
+char line[100];             /* line of input from keyboard */
 
 float this_resistance;      /* the current resistor's rating */
 float running_total;        /* running total of resistors */
 
-int main( void ) {
+int main(void) {
 
-	while ( 1 ) {
+	while (1) {
 	
-		printf( "Enter resistance in ohms (0 to end): " );
-		fgets( line, sizeof( line ), stdin );
-		sscanf( line, "%f", &this_resistance );
+		printf("Enter resistance in ohms (0 to end): ");
+		fgets(line, sizeof(line), stdin);
+		sscanf(line, "%f", &this_resistance);
 
-		if ( this_resistance == 0.0 ) {
-			printf( "Result: %0.04f\n", 1.0 / running_total );
-			return( 0 );
+		if (this_resistance == 0.0) {
+			printf("Result: %0.04f\n", 1.0 / running_total);
+			return(0);
 		}
 
 		/* add this to our running total of 1/Rn */

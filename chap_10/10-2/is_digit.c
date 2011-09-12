@@ -10,26 +10,26 @@
 	|| ((x)=='8') || ((x)=='9') )
 
 int main() {
-	if ( is_digit('9') ) {
-		printf( "ok\n" );
+	if (is_digit('9')) {
+		printf("ok\n");
 	} else {
-		printf( "wtf\n" );
+		printf("wtf\n");
 	}
-	if ( is_digit('f') ) {
-		printf( "wtf\n" );
+	if (is_digit('f')) {
+		printf("wtf\n");
 	} else {
-		printf( "ok\n" );
+		printf("ok\n");
 	}
-	if ( is_digit('2') ) {
-		printf( "ok\n" );
+	if (is_digit('2')) {
+		printf("ok\n");
 	} else {
-		printf( "wtf\n" );
+		printf("wtf\n");
 	}
-	if ( is_digit('|') ) {
-		printf( "wtf\n" );
+	if (is_digit('|')) {
+		printf("wtf\n");
 	} else {
-		printf( "ok\n" );
+		printf("ok\n");
 	}
-	return( 0 );
+	return(0);
 }
 

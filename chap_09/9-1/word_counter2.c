@@ -29,18 +29,18 @@
  * this is just a learning exercise, not production code.
  **********************************************************************/
 
-int count_words( char phrase[] ) {
+int count_words(char phrase[]) {
 	int i = 0;                  /* index into the string */
 	int word_count = 0;         /* count of seen words */
 
-	while ( 1 ) {
+	while (1) {
 
-		if ( phrase[ i ] == '\0' ) {
+		if (phrase[i] == '\0') {
 			/* end of the string, get out of the loop */
 			break;
 		}
 
-		if ( phrase[ i ] == '\n' ) {
+		if (phrase[i] == '\n') {
 			/* newline is not a word character */
 			++i;
 			continue;
@@ -52,10 +52,10 @@ int count_words( char phrase[] ) {
 		 *     if this is position 0 assume it's a new word
 		 *     otherwise assume it is if the prev char is a space
 		 */
-		if ( phrase[ i ] != ' ' ) {
-			if ( i == 0 ) {
+		if (phrase[i] != ' ') {
+			if (i == 0) {
 				++word_count;
-			} else if ( phrase[ i - 1 ] == ' ' ) {
+			} else if (phrase[i - 1] == ' ') {
 				++word_count;
 			}
 		}
@@ -66,16 +66,16 @@ int count_words( char phrase[] ) {
 	return word_count;
 }
 
-int main( void ) {
+int main(void) {
 	int result;
-	char line[ 100 ];           /* line of keyboard input */
+	char line[100];             /* line of keyboard input */
 
-	printf( "Enter a string: " );
-	fgets( line, sizeof( line ), stdin );
+	printf("Enter a string: ");
+	fgets(line, sizeof(line), stdin);
 
-	result = count_words( line );
-	printf( "Found %d words\n", result );
+	result = count_words(line);
+	printf("Found %d words\n", result);
 
-	return( 0 );
+	return(0);
 }
 

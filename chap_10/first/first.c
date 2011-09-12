@@ -21,8 +21,8 @@
 #define ALL_PARTS       FIRST_PART + LAST_PART
 
 int main() {
-	printf( "The square of all the parts is %d\n",
-			ALL_PARTS * ALL_PARTS );
-	return( 0 );
+	printf("The square of all the parts is %d\n",
+			ALL_PARTS * ALL_PARTS);
+	return(0);
 }
 

@@ -15,7 +15,7 @@ int main() {
 	 * and that first semicolons hoses it.
 	 */
 	size = FUDGE;
-	printf( "Size is %d\n", size );
-	return( 0 );
+	printf("Size is %d\n", size);
+	return(0);
 }
 

@@ -7,9 +7,9 @@ main() {
 	index = 0;
 
 	/* syntax error on next line */
-	while ( index < BIG_NUMBER ) {
+	while (index < BIG_NUMBER) {
 		index = index * 8;
 	}
 
-	return( 0 );
+	return(0);
 }

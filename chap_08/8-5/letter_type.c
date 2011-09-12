@@ -5,17 +5,17 @@
 
 #include <stdio.h>
 
-char line[ 100 ];               /* keyboard input */
+char line[100];                 /* keyboard input */
 char character;                 /* the character in question */
 
 int main() {
 
-	while ( 1 ) {
-		printf( "Enter a letter (0 to quit): " );
-		fgets( line, sizeof( line ), stdin );
-		sscanf( line, "%c", &character );
+	while (1) {
+		printf("Enter a letter (0 to quit): ");
+		fgets(line, sizeof(line), stdin);
+		sscanf(line, "%c", &character);
 
-		switch ( character ) {
+		switch (character) {
 			case 'a':
 			case 'A':
 			case 'e':
@@ -26,7 +26,7 @@ int main() {
 			case 'O':
 			case 'u':
 			case 'U':
-				printf( "Definitely a vowel.\n" );
+				printf("Definitely a vowel.\n");
 				break;
 
 			case 'b':
@@ -69,20 +69,20 @@ int main() {
 			case 'X':
 			case 'z':
 			case 'Z':
-				printf( "That's a consonant if I ever saw one.\n" );
+				printf("That's a consonant if I ever saw one.\n");
 				break;
 
 			case 'y':
 			case 'Y':
-				printf( "Definitely maybe a vowel. Sort of. Sometimes.\n" );
+				printf("Definitely maybe a vowel. Sort of. Sometimes.\n");
 				break;
 
 			case '0':
-				printf( "Goodbye.\n" );
-				return( 0 );
+				printf("Goodbye.\n");
+				return(0);
 
 			default:
-				printf( "Can you read? I said a LETTER. Try '0' to quit.\n" );
+				printf("Can you read? I said a LETTER. Try '0' to quit.\n");
 				break;
 
 		}

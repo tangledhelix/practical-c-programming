@@ -11,11 +11,11 @@
  *   area of the triangle.
  **********************************************************************/
 
-float triangle( float width, float height ) {
+float triangle(float width, float height) {
 
 	float area;         /* area of the triangle */
 
 	area = width * height / 2.0;
-	return( area );
+	return(area);
 }
 

@@ -22,40 +22,40 @@ int main() {
 
 	int c;                  /* a character from a file */
 
-	bfile = fopen( binary_filename, "r" );
-	if ( bfile == NULL ) {
-		fprintf( stderr, "Error: problem opening %s for reading\n", binary_filename );
-		return( 8 );
+	bfile = fopen(binary_filename, "r");
+	if (bfile == NULL) {
+		fprintf(stderr, "Error: problem opening %s for reading\n", binary_filename);
+		return(8);
 	}
 
-	afile = fopen( ascii_filename, "w+" );
-	if ( afile == NULL ) {
-		fprintf( stderr, "Error: problem opening %s for writing\n", ascii_filename );
-		fclose( bfile );
-		return( 8 );
+	afile = fopen(ascii_filename, "w+");
+	if (afile == NULL) {
+		fprintf(stderr, "Error: problem opening %s for writing\n", ascii_filename);
+		fclose(bfile);
+		return(8);
 	}
 
 	/* TODO: now that both files are open, read in the binary file
 	 * and write out the ascii file
 	 */
 
-	while ( 1 ) {
-		c = fgetc( bfile );
-		if ( c == EOF ) {
+	while (1) {
+		c = fgetc(bfile);
+		if (c == EOF) {
 			break;
 		}
 
 		/* if we are at NULL, output a separator (newline) */
-		if ( c == '\0' ) {
-			fputc( '\n', afile );
+		if (c == '\0') {
+			fputc('\n', afile);
 		} else {
-			fputc( c, afile );
+			fputc(c, afile);
 		}
 	}
 
-	fclose( afile );
-	fclose( bfile );
+	fclose(afile);
+	fclose(bfile);
 
-	return( 0 );
+	return(0);
 }
 

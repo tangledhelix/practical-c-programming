@@ -17,36 +17,36 @@
 	|| ((x)=='D') || ((x)=='E') || ((x)=='F') || is_digit(x) )
 
 int main() {
-	if ( is_hex('9') ) {
-		printf( "ok\n" );
+	if (is_hex('9')) {
+		printf("ok\n");
 	} else {
-		printf( "wtf\n" );
+		printf("wtf\n");
 	}
-	if ( is_hex('f') ) {
-		printf( "ok\n" );
+	if (is_hex('f')) {
+		printf("ok\n");
 	} else {
-		printf( "wtf\n" );
+		printf("wtf\n");
 	}
-	if ( is_hex('2') ) {
-		printf( "ok\n" );
+	if (is_hex('2')) {
+		printf("ok\n");
 	} else {
-		printf( "wtf\n" );
+		printf("wtf\n");
 	}
-	if ( is_hex('|') ) {
-		printf( "wtf\n" );
-	} else {
-		printf( "ok\n" );
-	}
-	if ( is_hex('t') ) {
+	if (is_hex('|')) {
 		printf( "wtf\n" );
 	} else {
-		printf( "ok\n" );
+		printf("ok\n");
 	}
-	if ( is_hex('D') ) {
-		printf( "ok\n" );
+	if (is_hex('t')) {
+		printf("wtf\n");
 	} else {
-		printf( "wtf\n" );
+		printf("ok\n");
 	}
-	return( 0 );
+	if (is_hex('D')) {
+		printf("ok\n");
+	} else {
+		printf("wtf\n");
+	}
+	return(0);
 }
 

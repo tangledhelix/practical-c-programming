@@ -5,10 +5,10 @@ int index;
 
 int main() {
 	index = 0;
-	while ( array[ index ] != 0 ) {
+	while (array[index] != 0) {
 		++index;
 	}
 
-	printf( "Number of elements before zero %d\n", index );
-	return( 0 );
+	printf("Number of elements before zero %d\n", index);
+	return(0);
 }

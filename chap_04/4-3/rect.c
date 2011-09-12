@@ -16,11 +16,11 @@ int main() {
 	height = 5;
 
 	area = width * height;
-	printf( "area = %d square inches\n", area );
+	printf("area = %d square inches\n", area);
 
-	perimeter = ( width * 2 ) + ( height * 2 );
-	printf( "perimeter = %d inches\n", perimeter );
+	perimeter = (width * 2) + (height * 2);
+	printf("perimeter = %d inches\n", perimeter);
 
-	return( 0 );
+	return(0);
 }
 
